@@ -111,20 +111,18 @@ public class Medium3POM {
 		Assert.assertEquals(expected, actual);
 	}	
 	
-	public void delete()
+	public String delete()
 	{
 		this.checkbox.click();
 		this.delete.click();
 		Alert alert= driver.switchTo().alert();
-		alert.accept();
-		String expected="Success: You have modified returns!";
-		
+		alert.accept();	
 		this.success.getText().trim();
 		String actual=this.success.getText().substring(0,35);
 		//String actual=this.success.getText().replace("\n", "");
 		//String actual=this.success.getText().trim().replace("x", "");
 		//actual=actual.replace("x", "");
-		Assert.assertEquals(expected, actual);
+		return actual;
 		
 	}
 	

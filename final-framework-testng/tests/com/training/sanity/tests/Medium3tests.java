@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -82,11 +83,14 @@ public class Medium3tests {
 		Thread.sleep(3000);
 		medium3POM.sendProduct("Integer vitae iaculis massa","SKU-003");
 		Thread.sleep(3000);
-		medium3POM.delete();
+		String actual=medium3POM.delete();
 		Thread.sleep(3000);
 		/*medium1POM.sendtotal("0");
 		Thread.sleep(3000);
 		medium1POM.datemodified();*/
+		
+		String expected="Success: You have modified returns!";
+		Assert.assertEquals(expected, actual);
 		
 		logger.log(LogStatus.PASS, "Order and filter");
 		String title = driver.getTitle();

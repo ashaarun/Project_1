@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -77,8 +78,11 @@ public class Medium4Tests {
 		screenShot.captureScreenShot("First");
 		medium4POM.clickcustomers();
 		Thread.sleep(3000);
-		medium4POM.CustEdit("Ashanew", "560042", "Addrewardnew", "100");
+		String actual1=medium4POM.CustEdit("Ashanew", "560042", "Addrewardnew", "100");
 		Thread.sleep(3000);
+		
+		String expected1="Success: You have modified customers!";
+		Assert.assertEquals(expected1, actual1);
 		
 		logger.log(LogStatus.PASS, "Order and filter");
 		String title = driver.getTitle();

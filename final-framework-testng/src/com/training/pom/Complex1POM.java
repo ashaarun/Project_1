@@ -8,11 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class Medium2POM {
+public class Complex1POM {
 
 private WebDriver driver; 
 	
-	public Medium2POM(WebDriver driver) {
+	public Complex1POM(WebDriver driver) {
 
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
@@ -185,7 +185,7 @@ private WebDriver driver;
 		this.Save.click();
 	}
 	
-	public String AddProdItem() throws InterruptedException
+	public void AddProdItem() throws InterruptedException
 	{
 		this.Links.click();
 		Thread.sleep(3000);
@@ -201,11 +201,11 @@ private WebDriver driver;
 		this.Design.click();
 		this.Save.click();
 		Thread.sleep(3000);
-		
+		String expected="Success: You have modified products!";
 		String actual=this.success.getText().substring(0,36);
 		//String actual=this.success.getText().replace("\n", "");
 		//actual=actual.replace("x", "");
-		return actual;
+		Assert.assertEquals(expected, actual);
 				
 	}
 	

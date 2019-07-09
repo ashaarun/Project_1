@@ -9,7 +9,7 @@ import com.training.dao.ELearningDAO;
 import com.training.readexcel.ApachePOIExcelRead;
 import com.training.readexcel.ReadExcel;
 
-public class LoginDataProviders {
+public class Complex3DataProviders {
 
 	@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
@@ -42,3 +42,4 @@ public class LoginDataProviders {
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
 	}
 }
+

@@ -1,33 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40805" started-at="2019-06-24T13:37:34Z" finished-at="2019-06-24T13:38:15Z">
+  <suite name="Default suite" duration-ms="228809" started-at="2019-07-09T09:56:35Z" finished-at="2019-07-09T10:00:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40805" started-at="2019-06-24T13:37:34Z" finished-at="2019-06-24T13:38:15Z">
-      <class name="com.training.sanity.tests.Medium4Tests">
-        <test-method status="PASS" signature="logreports()[pri:0, instance:com.training.sanity.tests.Medium4Tests@6debcae2]" name="logreports" is-config="true" duration-ms="343" started-at="2019-06-24T19:07:34Z" finished-at="2019-06-24T19:07:35Z">
+    <test name="Default test" duration-ms="228809" started-at="2019-07-09T09:56:35Z" finished-at="2019-07-09T10:00:24Z">
+      <class name="com.training.regression.tests.Complex3Tests">
+        <test-method status="PASS" signature="logreports()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="logreports" is-config="true" duration-ms="247" started-at="2019-07-09T15:26:35Z" finished-at="2019-07-09T15:26:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logreports -->
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Medium4Tests@6debcae2]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-06-24T19:07:35Z" finished-at="2019-06-24T19:07:35Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUpBeforeClass" is-config="true" duration-ms="6" started-at="2019-07-09T15:26:35Z" finished-at="2019-07-09T15:26:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.Medium4Tests@6debcae2]" name="setUp" is-config="true" duration-ms="10294" started-at="2019-06-24T19:07:35Z" finished-at="2019-06-24T19:07:45Z">
+        <test-method status="FAIL" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="loginDBTest" duration-ms="217472" started-at="2019-07-09T15:26:35Z" data-provider="excel-inputs" finished-at="2019-07-09T15:30:12Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: loginDBTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [null,null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: loginDBTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [null,null]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUp" is-config="true" duration-ms="17980" started-at="2019-07-09T15:26:36Z" finished-at="2019-07-09T15:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Medium4Tests@6debcae2]" name="validLoginTest" duration-ms="29138" started-at="2019-06-24T19:07:45Z" finished-at="2019-06-24T19:08:14Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="loginDBTest" duration-ms="61739" started-at="2019-07-09T15:26:54Z" data-provider="excel-inputs" finished-at="2019-07-09T15:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2389asha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[product is faulty]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Medium4Tests@6debcae2]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-06-24T19:08:14Z" finished-at="2019-06-24T19:08:15Z">
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-09T15:27:55Z" finished-at="2019-07-09T15:27:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.Medium4Tests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUp" is-config="true" duration-ms="8255" started-at="2019-07-09T15:27:56Z" finished-at="2019-07-09T15:28:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="loginDBTest" duration-ms="35074" started-at="2019-07-09T15:28:05Z" data-provider="excel-inputs" finished-at="2019-07-09T15:28:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2389asha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[product is not working]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-07-09T15:28:40Z" finished-at="2019-07-09T15:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUp" is-config="true" duration-ms="9278" started-at="2019-07-09T15:28:41Z" finished-at="2019-07-09T15:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="loginDBTest" duration-ms="33392" started-at="2019-07-09T15:28:50Z" data-provider="excel-inputs" finished-at="2019-07-09T15:29:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2389asha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wrong product]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-07-09T15:29:23Z" finished-at="2019-07-09T15:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUp" is-config="true" duration-ms="11236" started-at="2019-07-09T15:29:24Z" finished-at="2019-07-09T15:29:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="loginDBTest" duration-ms="35791" started-at="2019-07-09T15:29:36Z" data-provider="excel-inputs" finished-at="2019-07-09T15:30:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2389asha@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[not my item]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-07-09T15:30:11Z" finished-at="2019-07-09T15:30:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="setUp" is-config="true" duration-ms="8859" started-at="2019-07-09T15:30:12Z" finished-at="2019-07-09T15:30:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="validLoginTest" duration-ms="1191" started-at="2019-07-09T15:30:21Z" finished-at="2019-07-09T15:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.Complex3Tests@5a39699c]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-07-09T15:30:23Z" finished-at="2019-07-09T15:30:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.regression.tests.Complex3Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

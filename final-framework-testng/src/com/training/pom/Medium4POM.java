@@ -85,7 +85,7 @@ private WebDriver driver;
 		this.edit.click();
 	}
 	
-	public void CustEdit(String firstname, String postcode, String rewarddesc, String addpoints) throws InterruptedException
+	public String CustEdit(String firstname, String postcode, String rewarddesc, String addpoints) throws InterruptedException
 	{
 		this.firstname.clear();
 		this.firstname.sendKeys(firstname);
@@ -106,9 +106,9 @@ private WebDriver driver;
 		
 		this.save.click();
 		
-		String expected1="Success: You have modified customers!";
+		
 		String actual1=this.success.getText().substring(0,37);
-		Assert.assertEquals(expected1, actual1);
+		return actual1;
 		
 	}
 	
